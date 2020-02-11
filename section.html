@@ -46,7 +46,24 @@
       </ul>
 
       <section>
-        <h3 class="hidden">Фильтр</h3>
+        <h3>Фильтр:</h3>
+
+        <div>
+          <h4>Стоимость</h4>
+
+          <!-- на самом деле надо просто найти готовый range -->
+          <div class="range">
+            <div class="range range_bg"></div>
+            <div class="range range_active">
+              <div class="range range_point1">
+                <div class="range range_text1">от 0</div>
+              </div>
+              <div class="range range_point2">
+                <div class="range range_text2">до 5000</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div>
           <h4>Цвет</h4>
@@ -71,7 +88,20 @@
       </section>
 
       <section>
-        <h3 class="hidden">Товары</h3>
+        <h3 class="visualy-hidden">Товары</h3>
+
+        <section>
+          <h4>Сортировка:</h4>
+
+          <ul>
+            <li class="active">По цене</li>
+            <li>По типу</li>
+            <li>По популярности</li>
+          </ul>
+
+          <a href="#" class="active"><!-- up --></a>
+          <a href="#"><!-- down --></a>
+        </section>
 
         <ul>
           <li>
@@ -122,6 +152,18 @@
             </article>
           </li>
         </ul>
+
+        <section>
+          <h4 class="visualy-hidden">Пагинация</h4>
+
+          <a href="#">Назад</a>
+          <ul>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <a href="#">Вперед</a>
+        </section>
       </section>
     </main>
 
