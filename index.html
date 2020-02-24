@@ -284,5 +284,33 @@
         </a>
       </div>
     </footer>
+    <section>
+      <h3 class="visualy-hidden">Обратная связь</h3>
+      <button type="button">
+        <span class="visualy-hidden">закрыть</span>
+      </button>
+
+      <form name="feedback" action="#" type="POST">
+        <label for="feedback_name">Ваше имя</label>
+        <input type="text" name="name" id="feedback_name" placeholder="Имя Фамилия">
+
+        <label for="feedback_email">Ваш e-mail</label>
+        <input type="email" name="email" id="feedback_email" placeholder="email@example.com">
+
+        <label for="feedback_text">Текст письма</label>
+        <textarea name="text" id="feedback_text" placeholder="В свободной форме"></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <section>
+      <h3 class="visualy-hidden">Схема проезда</h3>
+      <button type="button">
+        <span class="visualy-hidden">закрыть</span>
+      </button>
+
+      <img src="img/map_full.png" width="960" height="559" alt="Местоположение на карте по адресу: г. Москва, ул. Строителей, 15">
+    </section>
   </body>
 </html>
