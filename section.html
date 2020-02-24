@@ -50,43 +50,66 @@
       <section>
         <h3>Фильтр:</h3>
 
-        <div>
-          <h4>Стоимость</h4>
+        <form name="filter" action="#" method="GET">
+          <fieldset>
+            <legend>Стоимость</legend>
 
-          <!-- на самом деле надо просто найти готовый range -->
-          <div class="range">
-            <div class="range range_bg"></div>
-            <div class="range range_active">
-              <div class="range range_point1">
-                <div class="range range_text1">от 0</div>
+            <!-- на самом деле надо просто найти готовый range -->
+            <div class="range">
+              <div class="range range_bg"></div>
+              <div class="range range_active">
+                <div class="range range_point1">
+                  <div class="range range_text1">от 0</div>
+                </div>
+                <div class="range range_point2">
+                  <div class="range range_text2">до 5000</div>
+                </div>
               </div>
-              <div class="range range_point2">
-                <div class="range range_text2">до 5000</div>
-              </div>
+              <input type="hidden" name="price_min" value="0">
+              <input type="hidden" name="price_max" value="5000">
             </div>
-          </div>
-        </div>
+          </fieldset>
 
-        <div>
-          <h4>Цвет</h4>
-          <ul>
-            <li><span>Черный</span></li>
-            <li><span>Белый</span></li>
-            <li><span>Синий</span></li>
-            <li><span>Красный</span></li>
-            <li><span>Розовый</span></li>
-          </ul>
-        </div>
+          <fieldset>
+            <legend>Цвет</legend>
 
-        <div>
-          <h4>Bluetooth</h4>
-          <ul>
-            <li><span>Есть</span></li>
-            <li><span>Нет</span></li>
-          </ul>
-        </div>
+            <label>
+              <input type="checkbox" name="color" value="black">
+              Черный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="white">
+              Белый
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="blue">
+              Синий
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="red">
+              Красный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="rose">
+              Розовый
+            </label>
+          </fieldset>
 
-        <a href="#">Показать</a>
+          <fieldset>
+            <legend>Bluetooth</legend>
+
+            <label>
+              <input type="radio" name="bluetooth" value="1">
+              Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="0">
+              Нет
+            </label>
+          </fieldset>
+
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
