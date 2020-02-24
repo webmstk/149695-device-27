@@ -13,7 +13,10 @@
           </a>
         </h1>
 
-        <span>Поиск</span>
+        <form name="search" action="https://echo.htmlacademy.ru">
+          <label for="search_query" class="visualy-hidden">Поиск по сайту<label>
+          <input type="text" name="q" id="search_query" placeholder="Поиск по сайту">
+        </form>
 
         <ul>
           <li><a href="#">Войти</a></li>
@@ -269,13 +272,19 @@
 
         <ul>
           <li>
-            <a href="#" target="_blank"><!-- fb --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">facebook</span>
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><!-- instagram --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">instagram</span>
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><!-- twitter --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">twitter</span>
+            </a>
           </li>
         </ul>
 
@@ -290,7 +299,7 @@
         <span class="visualy-hidden">закрыть</span>
       </button>
 
-      <form name="feedback" action="#" type="POST">
+      <form name="feedback" action="https://echo.htmlacademy.ru" type="POST">
         <label for="feedback_name">Ваше имя</label>
         <input type="text" name="name" id="feedback_name" placeholder="Имя Фамилия">
 
