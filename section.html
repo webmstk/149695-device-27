@@ -11,7 +11,10 @@
           <img src="img/logo.svg" width="163" height="35" alt="логотип-текст DEVICE">
         </a>
 
-        <span>Поиск</span>
+        <form name="search" action="https://echo.htmlacademy.ru">
+          <label for="search_query" class="visualy-hidden">Поиск по сайту<label>
+          <input type="text" name="q" id="search_query" placeholder="Поиск по сайту">
+        </form>
 
         <ul>
           <li><a href="#">Валентин Петухов</a></li>
@@ -24,7 +27,7 @@
         <button>+</button>
         <ul>
           <li><a href="section.html">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a>Моноподы для селфи</a></li>
           <li><a href="section.html">Экшн-камеры</a></li>
           <li><a href="section.html">Фитнес-браслеты</a></li>
           <li><a href="section.html">Умные часы</a></li>
@@ -50,7 +53,7 @@
       <section>
         <h3>Фильтр:</h3>
 
-        <form name="filter" action="#" method="GET">
+        <form name="filter" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend>Стоимость</legend>
 
@@ -244,13 +247,19 @@
 
         <ul>
           <li>
-            <a href="#" target="_blank"><!-- fb --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">facebook</span>
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><!-- instagram --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">instagram</span>
+            </a>
           </li>
           <li>
-            <a href="#" target="_blank"><!-- twitter --></a>
+            <a href="#" target="_blank">
+              <span class="visualy-hidden">twitter</span>
+            </a>
           </li>
         </ul>
 
