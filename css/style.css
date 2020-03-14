@@ -1,0 +1,48 @@
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.content-block {
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main-header {
+  background-color: #f7e296;
+  margin-top: 40px;
+  position: relative;
+  padding: 50px 60px;
+}
+
+.main-header .logo {
+  position: absolute;
+  top: -40px;
+}
+
+.main-search input {
+  background: none;
+  border: none;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  padding-left: 36px;
+  width: 200px;
+}
+
+.main-search input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-search::before {
+  content: "";
+  background-image: url("../img/search.png");
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}

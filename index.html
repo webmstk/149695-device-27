@@ -2,23 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header>
-      <nav>
-        <h1>
+      <nav class="content-block main-header">
+        <h1 class="logo">
           <a>
             <img src="img/logo.svg" width="163" height="35" alt="логотип-текст DEVICE">
           </a>
         </h1>
 
-        <form name="search" action="https://echo.htmlacademy.ru">
-          <label for="search_query" class="visualy-hidden">Поиск по сайту<label>
+        <form class="main-search" name="search" action="https://echo.htmlacademy.ru">
+          <label for="search_query" class="visualy-hidden">Поиск по сайту</label>
           <input type="text" name="q" id="search_query" placeholder="Поиск по сайту">
         </form>
 
-        <ul>
+        <ul class="">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
